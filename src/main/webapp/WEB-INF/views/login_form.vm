@@ -4,9 +4,9 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <html>
     <head>
-        <title>UP支持系统-UI</title>
+        <title>火炕头</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="UP支持系统">
+        <meta name="description" content="火炕头">
         <meta name="author" content="510655387@qq.com">
         <meta http-equiv="pragma" content="no-cache">
         <meta http-equiv="cache-control" content="no-cache">
@@ -29,7 +29,7 @@
     </head>
     <body>
         <header style="background-color: #000;color:#fff; width:100%; text-align:center;padding: 20px; border-bottom: solid 1px #eee;position: fixed;bottom: top;left: 0;">
-            <h1>UP支持系统-UI</h1>
+            <h1>火炕头</h1>
         </header>
         <div class="container-fluid">
             <div class="modal login-form" style="top: 25%">
@@ -73,7 +73,7 @@
             </div>
         </div>
         <footer style="width:100%; text-align:center;border-top: solid 1px #eee;padding-top: 10px;margin-top: 20px;position: fixed;bottom: 0;left: 0;">
-            <p>&copy; UP支持系统 2015 - 2018，保留所有权利</p>
+            <p>&copy; 火炕头 2015 - 2018，保留所有权利</p>
         </footer>
     </body>
     <script type="text/javascript">

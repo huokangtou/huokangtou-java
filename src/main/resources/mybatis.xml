@@ -39,7 +39,7 @@
             <value>60000</value>
         </property>
     </bean>
-    <bean id="poolableConnectionFactory" class="com.asiainno.huokangtou-server.service.PoolableConnectionFactoryAE">
+    <bean id="poolableConnectionFactory" class="com.huokangtou.server.service.PoolableConnectionFactoryAE">
         <constructor-arg index="0">
             <ref bean="connectionFactory"/>
         </constructor-arg>
@@ -78,7 +78,7 @@
         </property>
     </bean>
     <bean id="jdbcTemplate" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.asiainno.huokangtou-server.mapper" />
+        <property name="basePackage" value="com.huokangtou.server.mapper" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 </beans>

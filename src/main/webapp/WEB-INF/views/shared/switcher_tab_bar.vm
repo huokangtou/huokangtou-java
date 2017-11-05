@@ -1,6 +1,0 @@
-<div class="row-fluid">
-<ul class="nav nav-tabs">
-<li#if($tab_bar=="list") class="active" #end><a href="/huokangtou-server/switcher/cluster_node_detail/list">集群列表</a></li>
-<li#if($tab_bar=="register_form") class="active" #end><a href="/huokangtou-server/switcher/cluster_node_detail/register_form">集群注册</a></li>
-</ul>
-</div>

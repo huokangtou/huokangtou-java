@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.asiainno.huokangtou-server.mapper.UserMapper" >
-    <resultMap id="BaseResultMap" type="com.asiainno.huokangtou-server.model.User" >
+<mapper namespace="com.huokangtou.server.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.huokangtou.server.model.User" >
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="account" property="account" jdbcType="VARCHAR" />
         <result column="passwd" property="passwd" jdbcType="VARCHAR" />
@@ -19,7 +19,7 @@
         from user
         where id = #{id,jdbcType=INTEGER}
     </select>
-    <select id="selectSelective" resultMap="BaseResultMap" parameterType="com.asiainno.huokangtou-server.model.User" >
+    <select id="selectSelective" resultMap="BaseResultMap" parameterType="com.huokangtou.server.model.User" >
         select 
         <include refid="Base_Column_List" />
         from user
@@ -49,7 +49,7 @@
             and create_time &lt; #{endTime,jdbcType=VARCHAR}
         </if>
     </select>
-    <select id="selectAllSelective" resultMap="BaseResultMap" parameterType="com.asiainno.huokangtou-server.model.User" >
+    <select id="selectAllSelective" resultMap="BaseResultMap" parameterType="com.huokangtou.server.model.User" >
         select 
         <include refid="Base_Column_List" />
         from user
@@ -83,7 +83,7 @@
         delete from user
         where id = #{id,jdbcType=INTEGER}
     </delete>
-    <insert id="insert" parameterType="com.asiainno.huokangtou-server.model.User" >
+    <insert id="insert" parameterType="com.huokangtou.server.model.User" >
         insert into user (id, account, passwd, 
         email, user_role, valied, 
         create_time)
@@ -91,7 +91,7 @@
         #{email,jdbcType=VARCHAR}, #{userRole,jdbcType=INTEGER}, #{valied,jdbcType=INTEGER}, 
         #{createTime,jdbcType=TIMESTAMP})
     </insert>
-    <insert id="insertSelective" parameterType="com.asiainno.huokangtou-server.model.User" >
+    <insert id="insertSelective" parameterType="com.huokangtou.server.model.User" >
         insert into user
         <trim prefix="(" suffix=")" suffixOverrides="," >
             <if test="id != null" >
@@ -140,7 +140,7 @@
             </if>
         </trim>
     </insert>
-    <update id="updateByPrimaryKeySelective" parameterType="com.asiainno.huokangtou-server.model.User" >
+    <update id="updateByPrimaryKeySelective" parameterType="com.huokangtou.server.model.User" >
         update user
         <set >
             <if test="account != null" >
@@ -164,7 +164,7 @@
         </set>
         where id = #{id,jdbcType=INTEGER}
     </update>
-    <update id="updateByPrimaryKey" parameterType="com.asiainno.huokangtou-server.model.User" >
+    <update id="updateByPrimaryKey" parameterType="com.huokangtou.server.model.User" >
         update user
         set account = #{account,jdbcType=VARCHAR},
         passwd = #{passwd,jdbcType=VARCHAR},
